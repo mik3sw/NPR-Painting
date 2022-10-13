@@ -159,7 +159,7 @@ def main(image, outname="out.jpg" ,iterations=5, live = False):
 
 
 if __name__ == "__main__":
-    #main("input/im1.jpg", "output/out1.jpg", iterations=6, live=False)
+    main("input/im1.jpg", "output/out1.jpg", iterations=6, live=False)
     #main("input/im2.jpg", "output/out2.jpg", iterations=4, live=False)
     #main("input/im3.jpg", "output/out3.jpg", iterations=6, live=False)
     #main("input/im4.jpg", "output/out4.jpg", iterations=6, live=False)
@@ -168,7 +168,7 @@ if __name__ == "__main__":
     #main("input/im7.jpg", "output/out7.jpg", iterations=6, live=False)
     #main("input/im8.jpg", "output/out8.jpg", iterations=6, live=False)
     #main("input/im9.jpg", "output/out9.jpg", iterations=6, live=False)
-    main("input/im12.jpg", "output/out12.jpg", iterations=6, live=False)
+    #main("input/im12.jpg", "output/out12.jpg", iterations=6, live=False)
     #main("input/time1.jpg", "output/time1out.jpg", iterations=6, live=False)
     #main("input/time2.png", "output/time2out.jpg", iterations=5, live=False)
     #px.run("input/im11.jpg", "output/px11.jpg", 32)
