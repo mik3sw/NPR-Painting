@@ -31,16 +31,17 @@ def get_mean_color(img, cell):
     b = int(b/((cell[1]-cell[0])*(cell[3]-cell[2])))
     return (r,g,b)
 
-def put_stroke(img, position, color):
-    xs = position[0]
-    xf = position[1]
-    ys = position[2]
-    yf = position[3]
+def put_stroke(img, position_ori, color):
+    xs = position_ori[0] - int((position_ori[0]/100)*2)
+    xf = position_ori[1] + int((position_ori[0]/100)*2)
+    ys = position_ori[2] - int((position_ori[0]/100)*2)
+    yf = position_ori[3] + int((position_ori[0]/100)*2)
+    #print(f"position: ({xs}:{xf}, {ys}:{yf})")
 
-    percent1 = 3
-    percent2 = 5
+    #percent1 = 5
+    #percent2 = 5
     
-    if position[0] - int((position[0]/100)*percent1) > 0:
+    '''if position[0] - int((position[0]/100)*percent1) > 0:
         xs = position[0] - int((position[0]/100)*percent1)
     else:
         if position[0] - int((position[0]/100)*percent2) > 0:
@@ -63,8 +64,8 @@ def put_stroke(img, position, color):
     else:
         if position[3] + int((position[3]/100)*percent2) < img.shape[1]:
             yf = position[3] + int((position[3]/100)*percent2)
-
-
+'''
+    position = []
     position = [xs, xf, ys, yf]
     x = (position[1]-position[0])
     y = (position[3]-position[2])
@@ -108,12 +109,14 @@ def get_4cell(cell):
         [sx+int(x/2), fx, sy, sy+int(y/2)],
         [sx+int(x/2), fx, sy+int(y/2), fy],
     ]
+    
+    #print(cells[0])
     return cells
 
 
 def get_random_brush():
     brushes = [ "brushes/brush2.png", "brushes/brush3.png", "brushes/brush4.png", "brushes/brush6.png", "brushes/brush7.png"]
-    #brushes = ["brushes/brush4.png", "brushes/brush6.png", "brushes/brush7.png"]
+    #brushes = ["brushes/brush4.png", "brushes/brush6.png", "brushes/brush7.png", "brushes/brush3.png", "brushes/brush4.png",]
     #brushes = ["brushes/brush2.png"]
     return random.choice(brushes)
     

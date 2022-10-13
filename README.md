@@ -20,5 +20,5 @@ main("input/im1.jpg", "output/out1.jpg", iterations=6, live=False)
 | Original | Processed |
 |----------|-----------|
 |  ![](input/im1.jpg)   |  ![](output/out1.jpg)    |
-|  ![](input/im2.jpg)   |  ![](output/out2.jpg)    |
-|  ![](input/im3.jpg)   |  ![](output/out3.jpg)    |   
+|  ![](input/time1.jpg)   |  ![](output/time1out.jpg)    |
+|  ![](input/im12.jpg)   |  ![](output/out12.jpg)    |   
