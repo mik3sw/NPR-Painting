@@ -4,7 +4,7 @@ Non-Photorealistic Rendering (NPR) filter - Oil Painting style
 
 ## Quick start
 
-**File:** ```main.py````
+**File:** ```main.py```
 
 ```python
 main("input/im1.jpg", "output/out1.jpg", iterations=6, live=False)
